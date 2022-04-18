@@ -10,6 +10,8 @@ name: CI
         uses: ludeeus/action-shellcheck@1.1.0
       - name: Post comment
         uses: mshick/add-pr-comment@v1
+      - name: Lint Markdown
+        uses: tomwhross/write-good-action@v1.5
         if: $
         with:
             message: |
